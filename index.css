@@ -1,0 +1,25 @@
+body{
+    background-color: lightgrey;
+}
+
+.fa{
+    color: royalblue;
+}
+
+a{
+    border-bottom: 1px solid blue;
+}
+
+p{
+    margin: 10px 0px;
+    font-size: 12px;
+}
+
+.box-part{
+    background-color: white;
+    text-align: center;
+}
+
+.box{
+    padding: 60px 1px;
+}
