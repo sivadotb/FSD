@@ -17,10 +17,10 @@ function dispData(data){
     col.innerHTML = `<div class="card" style="width: 18rem;">
     <img src="${data[i].flags.png}" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">${data[i].name.common}</h5>
-      <p class="card-text">${data[i].capital}</p>
-      <p class="card-text">${data[i].region}</p>
-      <p class="card-text">${data[i].population}</p>
+      <h5 class="card-title">Country : ${data[i].name.common}</h5>
+      <p class="card-text">Capital : ${data[i].capital}</p>
+      <p class="card-text">Region : ${data[i].region}</p>
+      <p class="card-text">Population : ${data[i].population}</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
   </div>`
