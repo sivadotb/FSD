@@ -14,7 +14,7 @@ function dispData(data){
         var col = document.createElement("div");
         col.className = "col-md-4";
 
-    col.innerHTML = `<div class="card" style="width: 18rem;">
+    col.innerHTML = `<div class="card h-100" style="width: 18rem;">
     <img src="${data[i].flags.png}" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Country : ${data[i].name.common}</h5>
