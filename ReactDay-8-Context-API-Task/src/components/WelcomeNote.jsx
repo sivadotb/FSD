@@ -3,15 +3,15 @@ import AppContext from "../AppContext";
 
 function WelcomeNote() {
   //const storeName = "Tamil - Digital Store";
-  const { appData } = useContext(AppContext);
-  //console.log(appData);
+  const { appData, gblStoreName, gblGetAppParams } = useContext(AppContext);
+  //console.log(gblGetAppParams());
   //console.log(appData.storeName);
   return (
     <>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1>Welcome to {appData.storeName}!</h1>
+            <h1>Welcome to {gblStoreName()}!</h1>
             <p>
               We're so excited to have you here. We're a new digital store that
               offers a wide variety of products at competitive prices. We're
