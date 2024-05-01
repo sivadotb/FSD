@@ -1,5 +1,5 @@
-import { createContext } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { AppContextProvider } from "./AppContext";
 import Home from "./Home";
 import ProductsList from "./components/ProductsList";
 import ProductView from "./components/ProductView";
@@ -26,17 +26,11 @@ const router = createBrowserRouter([
   },
 ]);
 
-export const AppContext = createContext();
-
-function getAppData() {
-  return { storeName: "Tamil - Digital Store" };
-}
-
 function App() {
   return (
-    <AppContext.provider value={{ getAppData }}>
+    <AppContextProvider>
       <RouterProvider router={router} />
-    </AppContext.provider>
+    </AppContextProvider>
   );
 }
 
