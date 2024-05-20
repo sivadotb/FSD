@@ -34,7 +34,7 @@ function AppNav() {
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/products-list">
-                    Product Catalogue
+                    Product Catalog
                   </Link>
                 </li>
                 <li className="nav-item">

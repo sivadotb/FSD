@@ -9,6 +9,14 @@ function ProductsList() {
   const addToCart = function (id) {
     //console.log(id);
     const selectedProduct = jsonData.filter((product) => product.id == id);
+
+    var result = Object.keys(selectedProduct).map((key) => [
+      key,
+      selectedProduct[key],
+    ]);
+    console.log("Selected Product - Result : ");
+    console.log(result);
+    console.log("Selected Product - Result End: ");
     console.log("Selected Product");
     console.log(typeof selectedProduct);
     console.log(selectedProduct);
@@ -58,6 +66,17 @@ function ProductsList() {
                       }}
                     >
                       Add To Cart
+                    </a>
+                  </div>
+                  <div className="card-body">
+                    <a
+                      href="#"
+                      className="card-link"
+                      onClick={() => {
+                        addToCart(product.id);
+                      }}
+                    >
+                      View Product
                     </a>
                   </div>
                 </div>
